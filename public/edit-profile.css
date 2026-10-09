@@ -1,0 +1,48 @@
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group select {
+    padding: 12px;
+    border: 1px solid #d8e0da;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.form-buttons {
+    margin-top: 25px;
+    display: flex;
+    gap: 12px;
+}
+
+.save-btn,
+.cancel-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.save-btn {
+    background: #2e7d32;
+    color: white;
+}
+
+.cancel-btn {
+    background: #e5e5e5;
+    color: #333;
+}

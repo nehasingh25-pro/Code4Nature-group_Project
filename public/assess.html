@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assess Your Land | Bhumi Raksha</title>
+    <link rel="stylesheet" href="assess.css">
+</head>
+<body>
+    <aside class="sidebar">
+
+        <div class="sidebar-logo">
+
+            <div class="logo-icon">
+                🌱
+            </div>
+
+            <div>
+                <h2>Bhumi Raksha</h2>
+                <p>Healthy Land • Better Tomorrow</p>
+            </div>
+
+        </div>
+
+
+        <nav class="sidebar-menu">
+
+            <a href="index.html">
+                <span class="menu-icon">⌂</span>
+                <span>Home</span>
+            </a>
+
+            <a href="assess.html" class="active">
+                <span class="menu-icon">🌱</span>
+                <span>Assess Land</span>
+            </a>
+
+            <a href="result.html">
+                <span class="menu-icon">📋</span>
+                <span>Assessment Result</span>
+            </a>
+
+            <a href="progress.html">
+                <span class="menu-icon">📈</span>
+                <span>Current Progress</span>
+            </a>
+
+            <a href="history.html">
+                <span class="menu-icon">📚</span>
+                <span>Season History</span>
+            </a>
+
+            <a href="profile.html">
+                <span class="menu-icon">👤</span>
+                <span>Profile</span>
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-logout">
+
+            <a href="login.html">
+                <span class="menu-icon">↪</span>
+                <span>Logout</span>
+            </a>
+
+        </div>
+
+    </aside>
+
+    <header class="topbar">
+
+        <div class="brand">
+
+            <div class="brand-icon">
+                🌱
+            </div>
+
+            <div>
+                <h2>Bhumi Raksha</h2>
+                <p>Healthy Land • Better Tomorrow</p>
+            </div>
+
+        </div>
+
+
+        <div class="farmer-profile">
+
+            <span class="notification">
+                ♧
+            </span>
+
+            <div class="avatar">
+                F
+            </div>
+
+            <div>
+                <strong>Farmer</strong>
+                <small>My Farm</small>
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <main class="page-container">
+
+        <section class="hero">
+
+            <div class="hero-icon">
+                🌿
+            </div>
+
+            <div>
+
+                <h1>
+                    Assess Your Land 🌱
+                </h1>
+
+                <p>
+                    Tell us about your land and crop situation to get practical suggestions.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <form id="assessForm">
+
+            <section class="card">
+
+                <div class="section-title">
+
+                    <span>1</span>
+
+                    <div>
+                        <h2>Crop Information</h2>
+                        <p>Tell us what you are planning to grow.</p>
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="crop">
+                        Select Crop <span>*</span>
+                    </label>
+
+                    <select id="crop" name="crop">
+
+                        <option value="">
+                            Select Crop
+                        </option>
+
+                        <option value="Wheat">
+                            Wheat
+                        </option>
+
+                        <option value="Rice">
+                            Rice
+                        </option>
+
+                        <option value="Soybean">
+                            Soybean
+                        </option>
+
+                        <option value="Maize">
+                            Maize
+                        </option>
+
+                        <option value="Cotton">
+                            Cotton
+                        </option>
+
+                        <option value="Other">
+                            Other
+                        </option>
+
+                    </select>
+
+                    <p class="error" id="cropError"></p>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>
+                        Crop Status <span>*</span>
+                    </label>
+
+
+                    <div class="status-options">
+
+                        <label class="status-card">
+
+                            <input
+                                type="radio"
+                                name="cropStatus"
+                                value="grow"
+                            >
+
+                            <span class="radio-circle"></span>
+
+                            <span class="status-icon">
+                                🌱
+                            </span>
+
+                            <span>
+                                <strong>Crop ugana hai</strong>
+                                <small>I want to grow a crop</small>
+                            </span>
+
+                        </label>
+
+
+                        <label class="status-card">
+
+                            <input
+                                type="radio"
+                                name="cropStatus"
+                                value="already"
+                            >
+
+                            <span class="radio-circle"></span>
+
+                            <span class="status-icon">
+                                🌾
+                            </span>
+
+                            <span>
+                                <strong>Crop already uga raha hoon</strong>
+                                <small>Crop is already growing</small>
+                            </span>
+
+                        </label>
+
+
+                        <label class="status-card">
+
+                            <input
+                                type="radio"
+                                name="cropStatus"
+                                value="planning"
+                            >
+
+                            <span class="radio-circle"></span>
+
+                            <span class="status-icon">
+                                📅
+                            </span>
+
+                            <span>
+                                <strong>Next season planning</strong>
+                                <small>Planning for next season</small>
+                            </span>
+
+                        </label>
+
+                    </div>
+
+                    <p class="error" id="statusError"></p>
+
+                </div>
+
+            </section>
+
+            <section class="card">
+
+                <div class="section-title">
+
+                    <span>2</span>
+
+                    <div>
+                        <h2>Land Location</h2>
+                        <p>Help us understand where your field is located.</p>
+                    </div>
+
+                </div>
+
+
+                <div class="location-row">
+
+                    <div class="form-group location-input">
+
+                        <label for="location">
+                            Location / Village <span>*</span>
+                        </label>
+
+                        <input
+                            type="text"
+                            id="location"
+                            name="location"
+                            placeholder="e.g. Lucknow, Uttar Pradesh"
+                        >
+
+                        <p
+                            class="error"
+                            id="locationError"
+                        ></p>
+
+                    </div>
+
+
+                    <button
+                        type="button"
+                        class="map-button"
+                        id="mapButton"
+                    >
+                        📍 Select Location on Map
+                    </button>
+
+                </div>
+
+
+                <div
+                    class="map-message"
+                    id="mapMessage"
+                >
+                    Map selection is for UI only right now.
+                </div>
+
+            </section>
+
+            <section class="card">
+
+                <div class="section-title">
+
+                    <span>3</span>
+
+                    <div>
+                        <h2>Field Photo</h2>
+                        <p>A photo can help with visual assessment later.</p>
+                    </div>
+
+                </div>
+
+
+                <label
+                    class="upload-box"
+                    for="fieldPhoto"
+                >
+
+                    <div class="upload-icon">
+                        📷
+                    </div>
+
+                    <strong>
+                        Upload Field Photo
+                    </strong>
+
+                    <span>
+                        Click here to choose an image from your device
+                    </span>
+
+                    <small>
+                        JPG, JPEG or PNG
+                    </small>
+
+
+                    <input
+                        type="file"
+                        id="fieldPhoto"
+                        accept="image/png, image/jpeg, image/jpg"
+                    >
+
+                </label>
+
+
+                <div
+                    class="preview-container"
+                    id="previewContainer"
+                >
+
+                    <img
+                        id="photoPreview"
+                        src=""
+                        alt="Field photo preview"
+                    >
+
+                    <button
+                        type="button"
+                        class="remove-photo"
+                        id="removePhoto"
+                    >
+                        Remove photo
+                    </button>
+
+                </div>
+
+            </section>
+
+
+            <!-- 4. FARMER QUESTION -->
+
+            <section class="card">
+
+                <div class="section-title">
+
+                    <span>4</span>
+
+                    <div>
+                        <h2>Farmer's Question</h2>
+                        <p>Tell us about the problem or question you have.</p>
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="question">
+                        Describe your problem or question
+                    </label>
+
+                    <textarea
+                        id="question"
+                        name="question"
+                        maxlength="500"
+                        placeholder="Mere khet mein soybean ki growth kam ho rahi hai. Main kya improvement kar sakta hoon?"
+                    ></textarea>
+
+                    <div class="character-count">
+                        <span id="charCount">0</span>/500
+                    </div>
+
+                </div>
+
+            </section>
+
+            <div class="submit-area">
+
+                <p id="formMessage"></p>
+
+                <button
+                    type="submit"
+                    class="submit-button"
+                >
+                    Assess My Land 🌱
+                </button>
+
+                <small>
+                    Your information will be used to prepare your assessment.
+                </small>
+
+            </div>
+
+
+        </form>
+
+    </main>
+
+
+    <script src="assess.js"></script>
+
+</body>
+</html>

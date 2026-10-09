@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Land Assessment Result | Bhumi Raksha</title>
+    <link rel="stylesheet" href="result.css">
+</head>
+<body>
+
+<header class="topbar">
+    <div class="brand">
+        <div class="brand-icon">🌱</div>
+        <div>
+            <h2>Bhumi Raksha</h2>
+            <p>Healthy Land • Better Tomorrow</p>
+        </div>
+    </div>
+
+    <div class="profile">
+        <div class="avatar">F</div>
+        <div>
+            <strong>Farmer</strong>
+            <small>My Farm</small>
+        </div>
+    </div>
+</header>
+
+<main class="container">
+
+    <section class="success-banner">
+        <div class="success-icon">✓</div>
+        <div>
+            <h1>Your Land Assessment is Ready 🌱</h1>
+            <p>We looked at the information you provided and prepared some practical suggestions for your farm.</p>
+        </div>
+    </section>
+
+    <section class="farm-summary card">
+        <div class="card-heading">
+            <span class="number">1</span>
+            <div>
+                <h2>Your Farm Details</h2>
+                <p>Information provided by you</p>
+            </div>
+        </div>
+
+        <div class="summary-grid">
+            <div class="summary-item">
+                <span>🌾</span>
+                <div>
+                    <small>Selected Crop</small>
+                    <strong id="resultCrop">Soybean</strong>
+                </div>
+            </div>
+
+            <div class="summary-item">
+                <span>📍</span>
+                <div>
+                    <small>Location</small>
+                    <strong id="resultLocation">Lucknow, Uttar Pradesh</strong>
+                </div>
+            </div>
+
+            <div class="summary-item">
+                <span>📅</span>
+                <div>
+                    <small>Crop Status</small>
+                    <strong id="resultStatus">Crop already growing</strong>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="health-card card">
+        <div class="card-heading">
+            <span class="number">2</span>
+            <div>
+                <h2>Land & Crop Analysis</h2>
+                <p>A simple starting assessment based on the information provided.</p>
+            </div>
+        </div>
+
+        <div class="health-main">
+            <div class="leaf-circle">🌿</div>
+            <div class="health-content">
+                <span>Overall Land Health</span>
+                <h3>Moderate</h3>
+                <div class="progress">
+                    <div></div>
+                </div>
+                <small>Needs some attention</small>
+            </div>
+            <div class="health-score">60%</div>
+        </div>
+
+        <div class="analysis-grid">
+            <div class="analysis-box">
+                <span class="analysis-icon">🌱</span>
+                <small>Soil Condition</small>
+                <strong>Moderate</strong>
+                <p>Needs attention</p>
+            </div>
+
+            <div class="analysis-box">
+                <span class="analysis-icon">💧</span>
+                <small>Water Availability</small>
+                <strong>Limited</strong>
+                <p>Use water carefully</p>
+            </div>
+
+            <div class="analysis-box">
+                <span class="analysis-icon">⚠️</span>
+                <small>Erosion Risk</small>
+                <strong>Medium</strong>
+                <p>Take preventive steps</p>
+            </div>
+
+            <div class="analysis-box">
+                <span class="analysis-icon">🍃</span>
+                <small>Organic Matter</small>
+                <strong>Low</strong>
+                <p>Can be improved</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="solutions card">
+        <div class="card-heading">
+            <span class="number">3</span>
+            <div>
+                <h2>Recommended Solutions 💡</h2>
+                <p>Simple actions you can take on your land.</p>
+            </div>
+        </div>
+
+        <div class="solution-list">
+
+            <article class="solution">
+                <div class="solution-number">1</div>
+                <div class="solution-icon">💧</div>
+                <div class="solution-text">
+                    <h3>Improve Water Management</h3>
+                    <p>Use water carefully and follow a suitable irrigation schedule for your crop.</p>
+                </div>
+                <span class="priority high">High</span>
+            </article>
+
+            <article class="solution">
+                <div class="solution-number">2</div>
+                <div class="solution-icon">🌿</div>
+                <div class="solution-text">
+                    <h3>Add Organic Matter</h3>
+                    <p>Use compost or well-prepared farmyard manure to support soil health.</p>
+                </div>
+                <span class="priority high">High</span>
+            </article>
+
+            <article class="solution">
+                <div class="solution-number">3</div>
+                <div class="solution-icon">🌾</div>
+                <div class="solution-text">
+                    <h3>Practice Soil Conservation</h3>
+                    <p>Consider cover crops or suitable field practices to reduce soil erosion.</p>
+                </div>
+                <span class="priority medium">Medium</span>
+            </article>
+
+            <article class="solution">
+                <div class="solution-number">4</div>
+                <div class="solution-icon">🔎</div>
+                <div class="solution-text">
+                    <h3>Monitor Crop Health</h3>
+                    <p>Regularly check the crop for pests, diseases and changes in plant growth.</p>
+                </div>
+                <span class="priority medium">Medium</span>
+            </article>
+
+        </div>
+    </section>
+
+    <section class="question-card card" id="questionCard">
+        <div class="card-heading">
+            <span class="number">4</span>
+            <div>
+                <h2>Your Question</h2>
+                <p>Here is the problem you shared.</p>
+            </div>
+        </div>
+        <div class="question-box" id="resultQuestion">
+            No question was added.
+        </div>
+    </section>
+
+    <section class="next-steps card">
+        <div class="card-heading">
+            <span class="number">5</span>
+            <div>
+                <h2>What You Can Do Next 🌱</h2>
+                <p>Start with small steps and keep track of your progress.</p>
+            </div>
+        </div>
+
+        <div class="steps">
+            <div><b>1</b><span>Follow the recommended actions</span></div>
+            <div><b>2</b><span>Add activities like composting or soil conservation</span></div>
+            <div><b>3</b><span>Monitor crop growth and field condition</span></div>
+            <div><b>4</b><span>Update your progress regularly</span></div>
+        </div>
+    </section>
+
+    <div class="bottom-actions">
+        <button class="secondary-btn" id="backButton">← Assess Again</button>
+        <button class="primary-btn" id="saveButton">✓ Save My Action Plan</button>
+    </div>
+
+    <p class="notice">
+        ℹ️ This is a basic frontend assessment demo. Soil testing and expert consultation are recommended for accurate results.
+    </p>
+
+</main>
+
+<script src="result.js"></script>
+</body>
+</html>

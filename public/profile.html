@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Profile - Bhumi Raksha</title>
+
+    <link rel="stylesheet" href="profile.css">
+</head>
+
+<body>
+
+    <aside class="sidebar">
+
+        <div class="sidebar-logo">
+
+            <div class="logo-icon">🌱</div>
+
+            <div>
+                <h2>Bhumi Raksha</h2>
+                <p>Healthy Land • Better Tomorrow</p>
+            </div>
+
+        </div>
+
+
+        <nav class="sidebar-menu">
+
+            <a href="index.html">
+                <span class="menu-icon">⌂</span>
+                <span>Home</span>
+            </a>
+
+            <a href="assess.html">
+                <span class="menu-icon">🌱</span>
+                <span>Assess Land</span>
+            </a>
+
+            <a href="result.html">
+                <span class="menu-icon">📋</span>
+                <span>Assessment Result</span>
+            </a>
+
+            <a href="progress.html">
+                <span class="menu-icon">📈</span>
+                <span>Current Progress</span>
+            </a>
+
+            <a href="history.html">
+                <span class="menu-icon">📚</span>
+                <span>Season History</span>
+            </a>
+
+            <a href="profile.html" class="active">
+                <span class="menu-icon">👤</span>
+                <span>Profile</span>
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-logout">
+
+            <a href="login.html">
+                <span class="menu-icon">↪</span>
+                <span>Logout</span>
+            </a>
+
+        </div>
+
+    </aside>
+
+
+    <header class="topbar">
+
+        <div class="brand">
+
+            <div class="brand-icon">
+                🌱
+            </div>
+
+            <div>
+                <h2>Bhumi Raksha</h2>
+                <p>Healthy Land • Better Tomorrow</p>
+            </div>
+
+        </div>
+
+
+        <div class="farmer-profile">
+
+            <div class="avatar" id="topAvatar">
+                F
+            </div>
+
+            <div>
+                <strong id="topName">Farmer</strong>
+                <small>My Profile</small>
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <main class="page-container">
+
+        <div class="page-heading">
+
+            <div>
+                <h1>My Profile</h1>
+                <p>Your farmer and land information</p>
+            </div>
+
+            <a href="edit-profile.html" class="edit-btn">
+                ✏️ Edit Profile
+            </a>
+
+        </div>
+
+
+        <section class="profile-card profile-header">
+
+            <div class="photo-section">
+
+                <div class="big-avatar" id="profileAvatar">
+                    F
+                </div>
+
+                <input
+                    type="file"
+                    id="photoInput"
+                    accept="image/*"
+                    style="display: none;"
+                >
+
+                <button id="changePhotoBtn">
+                    Change Photo
+                </button>
+
+            </div>
+
+
+            <div class="profile-name">
+
+                <h2 id="profileName">
+                    Farmer
+                </h2>
+
+                <p>
+                    🌱 Farmer Account
+                </p>
+
+                <span id="profileLocation">
+                    📍 Lucknow, Uttar Pradesh
+                </span>
+
+            </div>
+
+        </section>
+
+
+        <section class="stats-grid">
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    🌾
+                </div>
+
+                <div>
+                    <h3>4</h3>
+                    <p>Total Fields</p>
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    📋
+                </div>
+
+                <div>
+                    <h3>8</h3>
+                    <p>Assessments</p>
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    📅
+                </div>
+
+                <div>
+                    <h3>3</h3>
+                    <p>Seasons Tracked</p>
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    📈
+                </div>
+
+                <div>
+                    <h3>72%</h3>
+                    <p>Average Progress</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="profile-card">
+
+            <div class="section-title">
+
+                <h2>Personal Information</h2>
+
+                <p>
+                    Your basic account details
+                </p>
+
+            </div>
+
+
+            <div class="info-grid">
+
+                <div class="info-item">
+
+                    <label>Full Name</label>
+
+                    <strong id="fullName">
+                        Farmer
+                    </strong>
+
+                </div>
+
+
+                <div class="info-item">
+
+                    <label>Email</label>
+
+                    <strong id="email">
+                        farmer@example.com
+                    </strong>
+
+                </div>
+
+
+                <div class="info-item">
+
+                    <label>Phone</label>
+
+                    <strong id="phone">
+                        Not added
+                    </strong>
+
+                </div>
+
+
+                <div class="info-item">
+
+                    <label>Location</label>
+
+                    <strong id="location">
+                        Lucknow, Uttar Pradesh
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="profile-card">
+
+            <div class="section-title">
+
+                <h2>Farm Information</h2>
+
+                <p>
+                    Current land and crop details
+                </p>
+
+            </div>
+
+
+            <div class="info-grid">
+
+                <div class="info-item">
+
+                    <label>Total Fields</label>
+
+                    <strong>
+                        4 Fields
+                    </strong>
+
+                </div>
+
+
+                <div class="info-item">
+
+                    <label>Farm Size</label>
+
+                    <strong id="farmSize">
+                        Not added
+                    </strong>
+
+                </div>
+
+
+                <div class="info-item">
+
+                    <label>Current Crop</label>
+
+                    <strong id="crop">
+                        Rice
+                    </strong>
+
+                </div>
+
+
+                <div class="info-item">
+
+                    <label>Current Season</label>
+
+                    <strong id="season">
+                        Kharif 2026
+                    </strong>
+
+                </div>
+
+
+                <div class="info-item">
+
+                    <label>Tracking Since</label>
+
+                    <strong id="trackingSince">
+                        2024
+                    </strong>
+
+                </div>
+
+
+                <div class="info-item">
+
+                    <label>Water Availability</label>
+
+                    <strong id="water">
+                        Available
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ACCOUNT -->
+
+        <section class="profile-card account-section">
+
+            <div class="section-title">
+
+                <h2>
+                    Account
+                </h2>
+
+                <p>
+                    Account related information
+                </p>
+
+            </div>
+
+
+            <div class="account-row">
+
+                <span>
+                    🔐
+                </span>
+
+                <div>
+
+                    <strong>
+                        Password
+                    </strong>
+
+                    <p>
+                        Your account password is protected.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="account-row">
+
+                <span>
+                    🔔
+                </span>
+
+                <div>
+
+                    <strong>
+                        Notifications
+                    </strong>
+
+                    <p>
+                        Stay updated about your land progress.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="profile.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Edit Profile - Bhumi Raksha</title>
+
+    <link rel="stylesheet" href="edit-profile.css">
+</head>
+
+<body>
+
+    <main class="page-container">
+
+        <div class="page-heading">
+
+            <div>
+                <h1>Edit Profile</h1>
+                <p>Update your farmer and farm information</p>
+            </div>
+
+        </div>
+
+
+        <section class="profile-card">
+
+            <div class="section-title">
+                <h2>Personal Information</h2>
+                <p>Enter your basic details</p>
+            </div>
+
+
+            <form id="profileForm">
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+
+                        <label>Full Name</label>
+
+                        <input
+                            type="text"
+                            id="nameInput"
+                            placeholder="Enter your full name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>Email</label>
+
+                        <input
+                            type="email"
+                            id="emailInput"
+                            placeholder="Enter your email"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>Phone</label>
+
+                        <input
+                            type="tel"
+                            id="phoneInput"
+                            placeholder="Enter phone number"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>Location</label>
+
+                        <input
+                            type="text"
+                            id="locationInput"
+                            placeholder="City, State"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>Farm Size</label>
+
+                        <input
+                            type="text"
+                            id="farmSizeInput"
+                            placeholder="Example: 2 acres"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>Current Crop</label>
+
+                        <input
+                            type="text"
+                            id="cropInput"
+                            placeholder="Example: Rice"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>Current Season</label>
+
+                        <input
+                            type="text"
+                            id="seasonInput"
+                            placeholder="Example: Kharif 2026"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>Tracking Since</label>
+
+                        <input
+                            type="number"
+                            id="trackingInput"
+                            placeholder="Example: 2024"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>Water Availability</label>
+
+                        <select id="waterInput">
+
+                            <option value="Available">
+                                Available
+                            </option>
+
+                            <option value="Limited">
+                                Limited
+                            </option>
+
+                            <option value="Not Available">
+                                Not Available
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-buttons">
+
+                    <button type="submit" class="save-btn">
+                        Save Profile
+                    </button>
+
+                    <a href="profile.html" class="cancel-btn">
+                        Cancel
+                    </a>
+
+                </div>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <script src="edit-profile.js"></script>
+
+</body>
+
+</html>

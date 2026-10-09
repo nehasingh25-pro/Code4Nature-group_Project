@@ -1,0 +1,533 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f8fbf7;
+    color: #17452b;
+}
+
+.navbar {
+    height: 70px;
+
+    padding: 0 8%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: white;
+
+    border-bottom: 1px solid #e7eee7;
+}
+
+.logo {
+    font-size: 21px;
+    font-weight: bold;
+    color: #174b2d;
+}
+
+.navbar nav {
+    display: flex;
+    gap: 25px;
+}
+
+.navbar nav a {
+    text-decoration: none;
+    color: #31543d;
+    font-size: 14px;
+}
+
+.navbar nav a.active {
+    color: #2f7d4b;
+    font-weight: bold;
+}
+
+.page-header {
+    text-align: center;
+
+    padding: 55px 20px;
+
+    background: #edf7eb;
+}
+
+.page-header p {
+    color: #438255;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 12px;
+}
+
+.page-header h1 {
+    font-size: 38px;
+
+    margin-bottom: 10px;
+}
+
+.page-header span {
+    color: #65756b;
+
+    font-size: 15px;
+}
+
+.progress-container {
+    width: 84%;
+
+    max-width: 1000px;
+
+    margin: 45px auto;
+}
+
+.season-card {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 18px;
+
+    box-shadow: 0 5px 20px rgba(31, 79, 43, 0.07);
+}
+
+.label {
+    font-size: 11px;
+
+    letter-spacing: 2px;
+
+    color: #718078;
+
+    margin-bottom: 7px;
+}
+
+.season-card h2 {
+    font-size: 26px;
+}
+
+.crop {
+    margin-top: 8px;
+
+    color: #65756b;
+
+    font-size: 14px;
+}
+
+.progress-number {
+    text-align: center;
+}
+
+.progress-number strong {
+    display: block;
+
+    font-size: 40px;
+
+    color: #2f7d4b;
+}
+
+.progress-number span {
+    color: #718078;
+
+    font-size: 12px;
+}
+
+.progress-card {
+    margin-top: 25px;
+
+    padding: 28px;
+
+    background: white;
+
+    border-radius: 18px;
+
+    box-shadow: 0 5px 20px rgba(31, 79, 43, 0.07);
+}
+
+.progress-heading {
+    display: flex;
+
+    justify-content: space-between;
+
+    margin-bottom: 18px;
+}
+
+.progress-heading h2 {
+    font-size: 20px;
+}
+
+.progress-heading strong {
+    color: #2f7d4b;
+}
+
+.progress-bar {
+    width: 100%;
+
+    height: 13px;
+
+    background: #e4ebe4;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+}
+
+.progress-fill {
+    width: 65%;
+
+    height: 100%;
+
+    background: #34804e;
+
+    border-radius: 20px;
+}
+
+.progress-text {
+    margin-top: 12px;
+
+    color: #718078;
+
+    font-size: 13px;
+}
+
+.stats {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 18px;
+
+    margin-top: 25px;
+}
+
+.stat-card {
+    background: white;
+
+    padding: 22px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 20px rgba(31, 79, 43, 0.06);
+}
+
+.stat-icon {
+    font-size: 25px;
+
+    margin-bottom: 12px;
+}
+
+.stat-card span {
+    display: block;
+
+    color: #718078;
+
+    font-size: 12px;
+
+    margin-bottom: 7px;
+}
+
+.stat-card strong {
+    font-size: 22px;
+
+    color: #2f7d4b;
+}
+
+.updates-card {
+    margin-top: 25px;
+
+    padding: 30px;
+
+    background: white;
+
+    border-radius: 18px;
+
+    box-shadow: 0 5px 20px rgba(31, 79, 43, 0.07);
+}
+
+.section-heading {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 25px;
+}
+
+.section-heading h2 {
+    font-size: 20px;
+}
+
+.add-btn {
+    border: none;
+
+    padding: 10px 18px;
+
+    border-radius: 20px;
+
+    background: #34804e;
+
+    color: white;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.update {
+    display: flex;
+
+    gap: 15px;
+
+    padding: 18px 0;
+
+    border-bottom: 1px solid #edf1ed;
+}
+
+.update:last-child {
+    border-bottom: none;
+}
+
+.update-icon {
+    width: 42px;
+
+    height: 42px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #e8f5e5;
+
+    border-radius: 50%;
+
+    font-size: 19px;
+}
+
+.update-content span {
+    font-size: 11px;
+
+    color: #438255;
+}
+
+.update-content h3 {
+    margin: 5px 0;
+
+    font-size: 16px;
+}
+
+.update-content p {
+    color: #718078;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+}
+
+
+/* CURRENT STATUS */
+
+.status-card {
+    margin-top: 25px;
+
+    padding: 30px;
+
+    background: #edf7eb;
+
+    border-radius: 18px;
+}
+
+.status-card h2 {
+    margin-bottom: 20px;
+}
+
+.status-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 15px;
+}
+
+.status-grid div {
+    padding: 17px;
+
+    background: white;
+
+    border-radius: 12px;
+}
+
+.status-grid span {
+    display: block;
+
+    color: #718078;
+
+    font-size: 12px;
+
+    margin-bottom: 8px;
+}
+
+.status-grid strong {
+    font-size: 14px;
+
+    color: #2f7d4b;
+}
+
+
+/* BOTTOM BUTTONS */
+
+.bottom-buttons {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    margin-top: 30px;
+}
+
+.history-btn,
+.assess-btn {
+    padding: 12px 20px;
+
+    border-radius: 25px;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: bold;
+}
+
+.history-btn {
+    background: #34804e;
+
+    color: white;
+}
+
+.assess-btn {
+    border: 1px solid #34804e;
+
+    color: #34804e;
+
+    background: white;
+}
+
+
+/* FOOTER */
+
+footer {
+    margin-top: 60px;
+
+    padding: 25px 8%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    background: #123b25;
+
+    color: white;
+}
+
+.footer-logo {
+    font-size: 18px;
+
+    font-weight: bold;
+}
+
+footer p {
+    font-size: 12px;
+
+    color: #c4d6c8;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 800px) {
+
+    .stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .status-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .navbar {
+        padding: 0 5%;
+    }
+
+    .navbar nav {
+        gap: 10px;
+    }
+
+    .progress-container {
+        width: 92%;
+    }
+
+    .season-card {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 20px;
+    }
+
+    .progress-number {
+        text-align: left;
+    }
+
+    .stats {
+        grid-template-columns: 1fr;
+    }
+
+    .status-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-heading {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    .bottom-buttons {
+        flex-direction: column;
+    }
+
+    .history-btn,
+    .assess-btn {
+        text-align: center;
+    }
+
+    footer {
+        flex-direction: column;
+
+        gap: 12px;
+
+        text-align: center;
+    }
+}
