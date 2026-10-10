@@ -1,6 +1,6 @@
 const signupForm = document.getElementById("signupForm");
 
-signupForm.addEventListener("submit", function (event) {
+signupForm.addEventListener("submit", async function (event) {
     event.preventDefault();
 
     const name = document.getElementById("name").value;
@@ -13,11 +13,30 @@ signupForm.addEventListener("submit", function (event) {
         return;
     }
 
-    console.log("Name:", name);
-    console.log("Email:", email);
-    console.log("Password:", password);
+    try {
+        const response = await fetch("/api/auth/register", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                name: name,
+                email: email,
+                password: password
+            })
+        });
 
-    alert("Account created successfully!");
+        const data = await response.json();
 
-    window.location.href = "login.html";
+        if (response.ok) {
+            alert("Account created successfully!");
+            window.location.href = "login.html";
+        } else {
+            alert(data.message || "Signup failed");
+        }
+
+    } catch (error) {
+        console.error("Signup error:", error);
+        alert("Unable to connect to the server.");
+    }
 });
